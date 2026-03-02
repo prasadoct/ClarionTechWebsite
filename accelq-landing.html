@@ -501,7 +501,7 @@
        Matches .section-icn-wrapper.dark gradient pattern
     ============================================================ */
     .partnership-section {
-      background: linear-gradient(180deg, #fff 55%, var(--dark3) 0);
+      background: var(--bg-light);
       padding: 90px 0;
     }
     .partnership-inner {
@@ -513,6 +513,10 @@
     .partnership-left {
       flex: 1;
       min-width: 280px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 40px 36px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
     }
     .partnership-left h2 {
       font-size: 36px;
@@ -565,9 +569,7 @@
     }
 
     @media (max-width: 768px) {
-      .partnership-section { background: var(--dark3); }
-      .partnership-left h2, .partnership-left p { color: #fff; }
-      .partnership-left .section-label { background: rgba(244,95,62,0.15); }
+      .partnership-left { padding: 28px 22px; }
       .benefit-grid { grid-template-columns: 1fr; }
     }
 
